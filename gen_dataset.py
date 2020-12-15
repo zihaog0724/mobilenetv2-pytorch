@@ -19,19 +19,19 @@ neg_train = neg[:int(len(neg) * train_percent)]
 neg_val = neg[int(len(neg) * train_percent):]
 
 for img_name in pos_train:
-	if "jpg" in img_name:
-		train_file.write("./pos/" + img_name + " 1" + "\n")
+    if "jpg" in img_name:
+        train_file.write("./pos/" + img_name + " 1" + "\n")
 
 for img_name in neg_train:
-	if "jpg" in img_name:
-		train_file.write("./neg/" + img_name + " 0" + "\n")
+    if "jpg" in img_name:
+        train_file.write("./neg/" + img_name + " 0" + "\n")
 
 for img_name in pos_val:
-	if "jpg" in img_name:
-		val_file.write("./pos/" + img_name + " 1" + "\n")
+    if "jpg" in img_name:
+        val_file.write("./pos/" + img_name + " 1" + "\n")
 
 for img_name in neg_val:
-	if "jpg" in img_name:
-		val_file.write("./neg/" + img_name + " 0" + "\n")
+    if "jpg" in img_name:
+        val_file.write("./neg/" + img_name + " 0" + "\n")
 
 
